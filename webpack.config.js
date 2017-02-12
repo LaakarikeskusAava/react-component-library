@@ -5,12 +5,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const JS_REGEX = /\.js$|\.jsx$|\.es6$|\.babel$/;
 
-const sassLoaders = [
-  'css',
-  'postcss',
-  'sass'
-];
-
 module.exports = {
   entry: [
     './src'
@@ -47,7 +41,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', sassLoaders.join('!'))
+        loaders: [
+          'style',
+          'css',
+          'postcss',
+          'sass'
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg|woff|eot|ttf)$/,

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Component library for Lääkärikeskus Aava.",
   "main": "dist/aava-react-component-library.js",
-  "style": "dist/aava-react-component-library.gitignore.css",
   "scripts": {
     "build": "rimraf dist && webpack --stats --config webpack.config.js",
     "prepublish": "npm run build",
@@ -21,7 +20,6 @@
     "react-router": "^3.0.0"
   },
   "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
     "babel-cli": "^6.22.2",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.1.0",
@@ -44,7 +42,6 @@
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-react": "^6.7.1",
     "eslint-plugin-standard": "^2.0.0",
-    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.10.0",
     "imports-loader": "^0.7.0",
     "node-sass": "^4.0.0",
