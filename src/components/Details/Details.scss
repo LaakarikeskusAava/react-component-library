@@ -1,0 +1,18 @@
+@import "../../sass/dependencies/all";
+
+.details__summary {
+  background: url('../../assets/arrow-blue-thin.svg') center right no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+}
+.details__summary::-webkit-details-marker {
+  display: none;
+}
+
+.details[open] {
+  .details__summary {
+    background-image: url('../../assets/arrow-down-blue.svg');
+    background-size: 18px;
+    margin-bottom: $vertical-rhythm / 2;
+  }
+}

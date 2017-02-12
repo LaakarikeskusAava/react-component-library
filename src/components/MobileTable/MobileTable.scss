@@ -1,0 +1,34 @@
+.table--mobile {
+  border-collapse: collapse;
+
+  &:not(.table--details) .table__row {
+    > tr:first-child {
+      td:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+
+    &:first-child .table__sub-row:first-child .table__cell {
+      border-top: solid 1px #e6e6e6;
+    }
+
+    .table__sub-row:not(:last-child) .table__cell {
+      border-bottom: 0;
+    }
+  }
+
+  .table__label {
+    display: none;
+  }
+
+  &.table--mobile-headers .table__label {
+    display: inline;
+  }
+}
+
+.table--two-column {
+  .table__cell {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

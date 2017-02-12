@@ -1,0 +1,60 @@
+@import "../../sass/dependencies/all";
+.table {
+  display: table;
+  text-align: left;
+  width: 100%;
+  margin-bottom: $vertical-rhythm;
+  border-collapse: collapse;
+}
+
+.table__header {
+  font-weight: bold;
+  padding: 15px 10px;
+
+  .table__cell {
+    text-align: left;
+    border-top: solid 1px #e6e6e6;
+  }
+}
+
+.table__row {
+  background: #fff;
+  width: 100%;
+}
+
+.table__row--odd {
+  background: #fafafa;
+}
+
+.table__cell {
+  padding: 15px 10px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.table__label {
+  font-weight: bold;
+}
+
+.table__sub-row {
+  &:first-child {
+    .table__cell {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+  }
+  &:last-child {
+    .table__cell {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.table--details {
+  details {
+    font-weight: normal;
+  }
+  td:first-child {
+    width: 10%;
+    vertical-align: top;
+  }
+}
