@@ -59,6 +59,6 @@
   },
   "files": [
     "README.md",
-    "lib/"
+    "dist/"
   ]
 }
