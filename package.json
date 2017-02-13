@@ -10,6 +10,7 @@
   },
   "repository": "LaakarikeskusAava/react-component-library",
   "homepage": "https://github.com/LaakarikeskusAava/react-component-library",
+  "license": "UNLICENSED",
   "author": {
     "name": "Lauri Eskola",
     "email": "lauri.eskola@druid.fi"
