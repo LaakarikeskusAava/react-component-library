@@ -1,0 +1,14 @@
+@import "../../sass/dependencies/all";
+
+.select {
+  height: 37px;
+  padding: 0 25px 0 15px;
+  margin-right: 20px;
+  background: url('../../assets/chosen-arrow-down.png') 90% 50% no-repeat $white;
+  border: 1px solid $border-dark-grey;
+  border-radius: 5px;
+  max-width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

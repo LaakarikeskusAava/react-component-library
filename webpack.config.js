@@ -10,6 +10,10 @@ module.exports = {
     './src'
   ],
   target: 'node',
+  node: {
+    __dirname: false,
+    __filename: false,
+  },
   externals: [nodeExternals()],
   output: {
     filename: 'aava-react-component-library.js',
@@ -50,9 +54,8 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg|woff|eot|ttf)$/,
-        loader: 'file-loader',
-        name: '[path][name]',
-        exclude: /node_modules/
+        loader: 'url-loader',
+        exclude: /node_modules/,
       }
     ]
   }
