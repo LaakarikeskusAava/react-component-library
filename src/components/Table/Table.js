@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 import TableRow from './TableRow';
 import Throbber from '../Throbber';
 import './Table.scss';
@@ -24,8 +25,8 @@ export const Table = ({ table, modifierClass }) => {
 };
 
 Table.propTypes = {
-  table: React.PropTypes.object,
-  modifierClass: React.PropTypes.string
+  table: PropTypes.object,
+  modifierClass: PropTypes.string
 };
 
 export default Table;

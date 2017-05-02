@@ -1,6 +1,7 @@
 import React from 'react';
 import Classnames from 'classnames';
 import { Link } from 'react-router';
+import PropTypes from 'prop-types';
 import './Button.scss';
 
 export function Button(props) {
@@ -24,9 +25,9 @@ export function Button(props) {
 }
 
 Button.propTypes = {
-  className: React.PropTypes.string,
-  modifierClass: React.PropTypes.string,
-  children: React.PropTypes.string
+  className: PropTypes.string,
+  modifierClass: PropTypes.string,
+  children: PropTypes.string
 };
 
 export default Button;

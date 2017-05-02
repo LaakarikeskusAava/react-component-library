@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 export const MobileTableTwoCol = ({ row, headers, odd }) => {
   const classes = Classnames('table__row', `table__row--${odd ? 'odd' : 'even'}`);
@@ -34,9 +35,9 @@ export const MobileTableTwoCol = ({ row, headers, odd }) => {
 };
 
 MobileTableTwoCol.propTypes = {
-  row: React.PropTypes.array.isRequired,
-  headers: React.PropTypes.array.isRequired,
-  odd: React.PropTypes.bool
+  row: PropTypes.array.isRequired,
+  headers: PropTypes.array.isRequired,
+  odd: PropTypes.bool
 };
 
 export default MobileTableTwoCol;
