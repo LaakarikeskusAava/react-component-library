@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 import TableColumn from './TableColumn';
 
 export const TableRow = ({ row, heading, odd = null }) => {
@@ -27,9 +28,9 @@ export const TableRow = ({ row, heading, odd = null }) => {
 };
 
 TableRow.propTypes = {
-  row: React.PropTypes.array.isRequired,
-  odd: React.PropTypes.bool,
-  heading: React.PropTypes.bool
+  row: PropTypes.array.isRequired,
+  odd: PropTypes.bool,
+  heading: PropTypes.bool
 };
 
 export default TableRow;

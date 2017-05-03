@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 import './Input.scss';
 
 const Input = (props) => {
@@ -12,9 +13,9 @@ const Input = (props) => {
 };
 
 Input.propTypes = {
-  type: React.PropTypes.string.isRequired,
-  className: React.PropTypes.string,
-  modifierClass: React.PropTypes.string,
+  type: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  modifierClass: PropTypes.string,
 };
 
 export default Input;
