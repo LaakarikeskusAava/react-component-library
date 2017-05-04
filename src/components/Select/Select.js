@@ -14,7 +14,7 @@ const Select = (props) => {
 
 Select.propTypes = {
   className: PropTypes.string,
-  modifierClass: PropTypes.string,
+  modifierClass: PropTypes.string
 };
 
 export default Select;
