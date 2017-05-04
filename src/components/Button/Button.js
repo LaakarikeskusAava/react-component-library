@@ -9,7 +9,7 @@ export function Button(props) {
   const classes = Classnames('button', className, modifierClass);
 
   let buttonMarkup = (
-    <button className={classes} {...childProps}/>
+    <button className={classes} {...childProps} />
   );
 
   // Use <a> element instead of button if button is a link.
