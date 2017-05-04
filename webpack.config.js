@@ -17,28 +17,27 @@ module.exports = {
   externals: [nodeExternals()],
   output: {
     filename: 'aava-react-component-library.js',
-    path: './dist',
+    path: path.resolve(__dirname, 'dist'),
     library: 'aava-react-component-library',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
   plugins: [
-    new ExtractTextPlugin('aava-react-component-library.css', { allChunks: true }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin()
+    new ExtractTextPlugin({ filename: 'aava-react-component-library.css', allChunks: true }),
+    new webpack.optimize.OccurrenceOrderPlugin()
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx', '.scss'],
-    modulesDirectories: ['node_modules', 'src']
+    extensions: ['.js', '.jsx', '.scss'],
+    modules: ['node_modules', 'src']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: JS_REGEX,
         include: [
           path.resolve(__dirname, 'src'),
         ],
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react', 'stage-0']
         },
@@ -46,10 +45,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: [
-          'style',
-          'css',
-          'postcss',
-          'sass'
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ]
       },
       {
