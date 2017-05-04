@@ -15,6 +15,9 @@
     "name": "Lauri Eskola",
     "email": "lauri.eskola@druid.fi"
   },
+  "dependencies": {
+    "moment": "git://github.com/lauriii/moment.git#9126224f2088677e770636b0b8d588928548dbc8"
+  },
   "peerDependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.5.8",
