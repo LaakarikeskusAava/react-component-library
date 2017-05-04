@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 import '../Table/Table.scss';
 import './MobileTable.scss';
 import MobileTableTwoCol from './MobileTableTwoCol';
@@ -26,9 +27,9 @@ export const MobileTable = ({ table, modifierClass, twoCol }) => {
 };
 
 MobileTable.propTypes = {
-  table: React.PropTypes.object,
-  modifierClass: React.PropTypes.string,
-  twoCol: React.PropTypes.bool
+  table: PropTypes.object,
+  modifierClass: PropTypes.string,
+  twoCol: PropTypes.bool
 };
 
 export default MobileTable;

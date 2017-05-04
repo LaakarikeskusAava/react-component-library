@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const TableColumn = ({ item, heading }) => {
   if (heading) {
@@ -8,8 +9,8 @@ export const TableColumn = ({ item, heading }) => {
 };
 
 TableColumn.propTypes = {
-  item: React.PropTypes.node,
-  heading: React.PropTypes.bool
+  item: PropTypes.node,
+  heading: PropTypes.bool
 };
 
 export default TableColumn;

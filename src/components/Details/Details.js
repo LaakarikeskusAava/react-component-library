@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Details.scss';
 
 export const Details = ({ title, text }) => {
@@ -11,8 +12,8 @@ export const Details = ({ title, text }) => {
 };
 
 Details.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  text: React.PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 };
 
 export default Details;

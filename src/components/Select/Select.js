@@ -1,5 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
+import PropTypes from 'prop-types';
 import './Select.scss';
 
 const Select = (props) => {
@@ -12,8 +13,8 @@ const Select = (props) => {
 };
 
 Select.propTypes = {
-  className: React.PropTypes.string,
-  modifierClass: React.PropTypes.string,
+  className: PropTypes.string,
+  modifierClass: PropTypes.string
 };
 
 export default Select;

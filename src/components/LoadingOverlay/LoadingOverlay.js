@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Throbber from '../Throbber';
 import './LoadingOverlay.scss';
 
@@ -14,7 +15,7 @@ export const LoadingOverlay = (props) => {
 };
 
 LoadingOverlay.propTypes = {
-  children: React.PropTypes.node
+  children: PropTypes.node
 };
 
 export default LoadingOverlay;

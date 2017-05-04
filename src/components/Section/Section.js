@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Section.scss';
 
 export const Section = (props) => {
@@ -8,7 +9,7 @@ export const Section = (props) => {
 };
 
 Section.propTypes = {
-  children: React.PropTypes.node
+  children: PropTypes.node
 };
 
 export default Section;
