@@ -1,9 +1,11 @@
 @import "../../sass/dependencies/all";
 
 .input {
-  margin: 0 20px 0 0;
+  margin: 0;
 }
 
+.input--tel,
+.input--number,
 .input--text,
 .input--email {
   height: 37px;
