@@ -11,7 +11,7 @@ import Throbber from './components/Throbber';
 
 export {
   Button,
-	DateFormatter,
+  DateFormatter,
   Details,
   Input,
   LoadingOverlay,
