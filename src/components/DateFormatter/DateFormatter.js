@@ -17,7 +17,7 @@ const DateFormatter = ({ timestamp, relative, language = 'en' }) => {
   );
 };
 
-Date.propTypes = {
+DateFormatter.propTypes = {
   timestamp: React.PropTypes.number.isRequired,
   relative: React.PropTypes.bool,
   language: React.PropTypes.string
