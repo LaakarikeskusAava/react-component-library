@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-const Date = ({ timestamp, relative, language = 'en' }) => {
+const DateFormatter = ({ timestamp, relative, language = 'en' }) => {
   if (relative) {
     return (
       <span>
@@ -23,4 +23,4 @@ Date.propTypes = {
   language: React.PropTypes.string
 };
 
-export default Date;
+export default DateFormatter;

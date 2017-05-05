@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import DateFormatter from './components/DateFormatter';
 import Details from './components/Details';
 import Input from './components/Input';
 import LoadingOverlay from './components/LoadingOverlay';
@@ -10,6 +11,7 @@ import Throbber from './components/Throbber';
 
 export {
   Button,
+	DateFormatter,
   Details,
   Input,
   LoadingOverlay,
