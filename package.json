@@ -1,6 +1,6 @@
 {
   "name": "aava-react-component-library",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "description": "Component library for Lääkärikeskus Aava.",
   "main": "dist/aava-react-component-library.js",
   "scripts": {
@@ -14,6 +14,9 @@
   "author": {
     "name": "Lauri Eskola",
     "email": "lauri.eskola@druid.fi"
+  },
+  "dependencies": {
+    "moment": "git://github.com/lauriii/moment.git#9126224f2088677e770636b0b8d588928548dbc8"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",
