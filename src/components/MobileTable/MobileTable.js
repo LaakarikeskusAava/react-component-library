@@ -12,15 +12,17 @@ export const MobileTable = ({ table, modifierClass, twoCol }) => {
     return <Throbber />;
   }
 
+  const { rows, headers } = table;
+
   const classes = Classnames('table', 'table--content', 'table--mobile', `table--${twoCol ? 'two-column' : 'single-column'}`, modifierClass);
   return (
     <table className={classes}>
-      {table.rows.map((row, i) => {
+      {rows.map((row, i) => {
         if (twoCol) {
-          return <MobileTableTwoCol row={row} headers={table.headers} odd={(i + 1) % 2 === 0} />;
+          return <MobileTableTwoCol key={i} row={row} headers={headers} odd={(i + 1) % 2 === 0} />;
         }
 
-        return <MobileTableSingleCol row={row} odd={(i + 1) % 2 === 0} />;
+        return <MobileTableSingleCol key={i} headers={headers} row={row} odd={(i + 1) % 2 === 0} />;
       })}
     </table>
   );

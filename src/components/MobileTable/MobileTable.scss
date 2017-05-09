@@ -17,18 +17,18 @@
     }
   }
 
-  .table__label {
-    display: none;
-  }
-
   &.table--mobile-headers .table__label {
     display: inline;
   }
 }
 
-.table--two-column {
+.table--mobile {
   .table__cell {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
+}
+
+.table__label {
+  font-weight: bold;
 }
