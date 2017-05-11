@@ -3,3 +3,9 @@
 .section {
   margin-bottom: 2 * $vertical-rhythm;
 }
+
+.section__title {
+  border-bottom: 1px solid $border-grey-v2;
+  padding-bottom: $vertical-rhythm / 2;
+  margin-bottom: $vertical-rhythm / 2;
+}
