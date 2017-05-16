@@ -8,9 +8,9 @@ export const Section = (props) => {
   let sectionTitleMarkup = null;
   if (sectionTitle) {
     if (sectionTitleLevel === 1) {
-      sectionTitleMarkup = <h1 className="section__title">{sectionTitle}</h1>
+      sectionTitleMarkup = (<h1 className="section__title">{sectionTitle}</h1>);
     } else {
-      sectionTitleMarkup = <h2 className="section__title">{sectionTitle}</h2>
+      sectionTitleMarkup = (<h2 className="section__title">{sectionTitle}</h2>);
     }
   }
 
