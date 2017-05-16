@@ -10,7 +10,7 @@
 .input--email {
   height: 37px;
   padding: 0 8px;
-  border: 1px solid $border-dark-grey;
+  border: 1px solid $border-grey-v2;
   border-radius: 5px;
   max-width: 100%;
 }
@@ -18,4 +18,8 @@
 .input--radio,
 .input--checkbox {
   margin: 0 10px 0 0;
+}
+
+.input--full-width {
+  width: 100%;
 }
