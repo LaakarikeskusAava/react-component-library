@@ -4,8 +4,14 @@ import PropTypes from 'prop-types';
 import './Input.scss';
 
 const Input = (props) => {
-  const { className, modifierClass, type, ...childProps } = props;
-  const classes = Classnames('input', `input--${type}`, className, modifierClass);
+  const { className, modifierClass, fullWidth, type, ...childProps } = props;
+  const classes = Classnames(
+    'input',
+    `input--${type}`,
+    className,
+    modifierClass,
+    fullWidth ? 'input--full-width' : null
+  );
 
   return (
     <input className={classes} type={type} {...childProps} />
@@ -15,7 +21,8 @@ const Input = (props) => {
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
-  modifierClass: PropTypes.string
+  modifierClass: PropTypes.string,
+  fullWidth: PropTypes.bool
 };
 
 export default Input;
