@@ -13,6 +13,9 @@
   border: 1px solid $border-grey-v2;
   border-radius: 5px;
   max-width: 100%;
+  &.has-error {
+    border-color: red;
+  }
 }
 
 .input--radio,
