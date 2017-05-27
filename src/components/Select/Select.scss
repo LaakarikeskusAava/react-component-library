@@ -12,7 +12,8 @@
   appearance: none;
 }
 
-// Remove select arrow in IE11 https://stackoverflow.com/questions/16603979/select-removing-dropdown-arrow
+// Remove select arrow in IE11.
+// @see https://stackoverflow.com/questions/16603979/select-removing-dropdown-arrow
 select::-ms-expand {
   display: none;
 }
