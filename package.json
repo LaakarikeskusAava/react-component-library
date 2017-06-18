@@ -1,6 +1,6 @@
 {
   "name": "aava-react-component-library",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Component library for Lääkärikeskus Aava.",
   "main": "dist/aava-react-component-library.js",
   "scripts": {
