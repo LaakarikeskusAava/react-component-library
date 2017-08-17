@@ -9,7 +9,10 @@ export function Button(props) {
   const classes = Classnames('button', className, modifierClass);
 
   // Use <a> element instead of button if button is a link.
-  if (typeof childProps.to !== 'undefined') {
+  if (typeof childProps.to !== 'undefined' && typeof childProps.children !== 'undefined') {
+    // @todo Remove override after https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/310
+    //   has been fixed.
+    // eslint-disable-next-line jsx-a11y/anchor-has-content
     return <Link className={classes} {...childProps} />;
   }
 
@@ -18,7 +21,7 @@ export function Button(props) {
 
 Button.propTypes = {
   className: PropTypes.string,
-  modifierClass: PropTypes.string,
+  modifierClass: PropTypes.string
 };
 
 export default Button;
