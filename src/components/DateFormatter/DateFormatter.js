@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 
 const DateFormatter = ({ timestamp, relative, language = 'en' }) => {
@@ -18,9 +19,9 @@ const DateFormatter = ({ timestamp, relative, language = 'en' }) => {
 };
 
 DateFormatter.propTypes = {
-  timestamp: React.PropTypes.number.isRequired,
-  relative: React.PropTypes.bool,
-  language: React.PropTypes.string
+  timestamp: PropTypes.number.isRequired,
+  relative: PropTypes.bool,
+  language: PropTypes.string
 };
 
 export default DateFormatter;
